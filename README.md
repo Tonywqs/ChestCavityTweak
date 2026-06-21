@@ -8,6 +8,8 @@
 
 **本模组专为"脆骨症黯光"整合包 v1.0.2-DIM 设计。** 该整合包是 [脆骨症 (No Flesh Within Chest)](https://github.com/Go-Camping/No-Flesh-Within-Chest) 的一个 [分支](https://github.com/Go-Camping/No-Flesh-Within-Chest/tree/version_all_dim)。本模组在运行时通过 KubeJS/Hotai 引用该整合包提供的 GUI 纹理，**未安装该整合包时将无法正确显示**。本模组不是独立的或通用的附属模组。
 
+**版本限定声明：** 本模组仅适用于脆骨症黯光-1.0.2-DIM（No Flesh Within Chest-1.0.2-DIM）版本。其余所有版本（包括原始脆骨症版本及该分支的其他版本）均未经测试，适配度及稳定性未知。在非目标版本中使用所造成的一切后果由使用者自行承担。
+
 **本模组由 AI 辅助生成。** 项目代码通过 [QoderWork](https://qoder.com) AI 编程助手自动生成，包括 Mixin 注入、配置系统、GUI 渲染逻辑等核心功能。
 
 ## 功能特性
