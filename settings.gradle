@@ -1,0 +1,14 @@
+pluginManagement {
+    repositories {
+        // Sponge Maven 仓库（MixinGradle 插件）
+        maven { url 'https://repo.spongepowered.org/repository/maven-public/' }
+        // BMCLAPI Forge专用镜像，插件和依赖最全，优先使用
+        maven { url 'https://bmclapi2.bangbang93.com/maven' }
+        // 阿里云公共镜像兜底
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        // 官方源最后兜底
+        gradlePluginPortal()
+        maven { url 'https://maven.minecraftforge.net/' }
+    }
+}

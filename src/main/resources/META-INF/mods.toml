@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT"
+
+[[mods]]
+modId="chestcavitytweak"
+version="${version}"
+displayName="${mod_name}"
+authors="tonywqs"
+mixins=["mixins.chestcavitytweak.json"]
+description='''
+${mod_description}
+'''
+
+# Mixin config
+[[mixins]]
+modId="chestcavitytweak"
+config="mixins.chestcavitytweak.json"
+
+# Dependencies
+[[dependencies.chestcavitytweak]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+
+# 强制依赖原ChestCavity模组
+[[dependencies.chestcavitytweak]]
+    modId="chestcavity"
+    mandatory=true
+    versionRange="*"
+    ordering="NONE"
+    side="BOTH"

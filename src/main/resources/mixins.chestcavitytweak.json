@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tonywqs.chestcavitytweak.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ChestCavityInventoryMixin"
+  ],
+  "client": [
+    "ChestCavityScreenMixin",
+    "AbstractContainerScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "mixin.refmap.json"
+}
