@@ -1,5 +1,7 @@
 # ChestCavityTweak
 
+[English](README.md)
+
 一个基于 [ChestCavity](https://github.com/Tigereye504/chestcavity) 的 Forge 1.19.2 附属模组，可配置胸腔背包的行数（3–6 行，即 27–54 格）。
 
 ## 重要声明
