@@ -12,11 +12,7 @@ A Forge 1.19.2 add-on mod for [Chest Cavity - Forge Port](https://github.com/Boo
 
 ## Features
 
-- Configurable chest cavity inventory size via server config (`cavityRows`: 3, 4, 5, or 6)
-- Automatic GUI background extension for extra rows (pixel-perfect alignment)
-- Proper "物品栏" label repositioning in the gap between cavity rows and player inventory
-- Slot highlight and tooltip rendering unaffected
-- Default: 6 rows (54 slots)
+- Configurable chest cavity inventory rows via server config (`cavityRows`: 3, 4, 5, or 6), default: 6 rows (54 slots)
 
 ## Requirements
 
