@@ -2,7 +2,7 @@
 
 [English](README.en.md)
 
-一个基于 [Chest Cavity - Forge Port](https://github.com/BoonelDanForever/ChestCavityForge) 的 Forge 1.19.2 附属模组，可配置胸腔背包的行数（3–6 行，即 27–54 格）。
+一个基于 [Chest Cavity - Forge Port](https://github.com/BoonelDanForever/ChestCavityForge) 的 Forge 1.19.2 附属模组，可配置胸腔背包的行数（4–6 行，即 36–54 格）。
 
 ## 重要声明
 
@@ -14,7 +14,8 @@
 
 ## 功能特性
 
-- 通过服务端配置调整胸腔背包行数（`cavityRows`：3、4、5 或 6 行），默认 6 行（54 格）
+- 通过服务端配置调整胸腔背包行数（`cavityRows`：4、5 或 6 行），默认 6 行（54 格）
+- 本模组仅支持 4、5、6 行胸腔背包，设置为其他行数可能导致 GUI 错位或功能异常。如有其他行数需求，请自行修改源码适配
 
 ## 运行环境要求
 
@@ -32,10 +33,10 @@
 
 ```toml
 [chest_cavity_settings]
-    # 胸腔背包行数。有效值：3、4、5、6。
+    # 胸腔背包行数。有效值：4、5、6。
     # 世界/服务器重启后生效。
     # 减小大小可能导致多余槽位中的物品丢失。
-    # 范围：3 ~ 6
+    # 范围：4 ~ 6
     cavityRows = 6
 ```
 
@@ -46,11 +47,19 @@
    ```
    gradlew build
    ```
-3. 输出 jar：`build/libs/chestcavitytweak-1.19.2-1.0.0.jar`
+3. 输出 jar：`build/libs/chestcavitytweak-1.19.2-0.1.0.jar`
 
 ## 许可证
 
 本项目基于 **MIT 许可证** 开源 — 详见 [LICENSE](LICENSE) 文件。
+
+## 二次修改与衍生声明
+
+你可以在 MIT 许可证的条款下自由修改、衍生或重新分发本模组的代码。但请在你的衍生作品中遵守以下要求：
+
+1. **保留本模组署名** — 明确注明原模组名称 (ChestCavityTweak)、作者 (Tonywqs) 及源码仓库链接。
+2. **保留前置模组署名** — 明确注明 ChestCavity (Tigereye504)、Chest Cavity - Forge Port (BoonelDanForever) 及"脆骨症黯光"整合包 (Go-Camping) 的署名与链接。
+3. **保留许可声明** — 在你的衍生作品中包含本项目的 MIT 许可证原文及知识产权与署名归属章节的内容。
 
 ## 知识产权与署名归属
 

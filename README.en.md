@@ -2,7 +2,7 @@
 
 [中文](README.md)
 
-A Forge 1.19.2 add-on mod for [Chest Cavity - Forge Port](https://github.com/BoonelDanForever/ChestCavityForge) that allows configurable chest cavity inventory rows (3–6 rows, i.e. 27–54 slots).
+A Forge 1.19.2 add-on mod for [Chest Cavity - Forge Port](https://github.com/BoonelDanForever/ChestCavityForge) that allows configurable chest cavity inventory rows (4–6 rows, i.e. 36–54 slots).
 
 ## Important Notice
 
@@ -14,7 +14,8 @@ A Forge 1.19.2 add-on mod for [Chest Cavity - Forge Port](https://github.com/Boo
 
 ## Features
 
-- Configurable chest cavity inventory rows via server config (`cavityRows`: 3, 4, 5, or 6), default: 6 rows (54 slots)
+- Configurable chest cavity inventory rows via server config (`cavityRows`: 4, 5, or 6), default: 6 rows (54 slots)
+- This mod only supports 4, 5, or 6 rows. Setting other row counts may cause GUI misalignment or functional issues. For other row counts, please modify the source code accordingly
 
 ## Requirements
 
@@ -32,10 +33,10 @@ After the first launch, a config file is generated at:
 
 ```toml
 [chest_cavity_settings]
-    # Number of rows in the chest cavity inventory. Valid values: 3, 4, 5, 6.
+    # Number of rows in the chest cavity inventory. Valid values: 4, 5, 6.
     # Takes effect after world/server restart.
     # Reducing the size may cause items in excess slots to be lost.
-    # Range: 3 ~ 6
+    # Range: 4 ~ 6
     cavityRows = 6
 ```
 
@@ -46,11 +47,19 @@ After the first launch, a config file is generated at:
    ```
    gradlew build
    ```
-3. Output jar: `build/libs/chestcavitytweak-1.19.2-1.0.0.jar`
+3. Output jar: `build/libs/chestcavitytweak-1.19.2-0.1.0.jar`
 
 ## License
 
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+## Modification & Derivative Works
+
+You are free to modify, fork, or redistribute this mod's code under the terms of the MIT License. However, please observe the following requirements in any derivative work:
+
+1. **Retain attribution to this mod** — clearly state the original mod name (ChestCavityTweak), author (Tonywqs), and source repository link.
+2. **Retain attribution to prerequisite mods** — clearly state the attribution and links for ChestCavity (Tigereye504), Chest Cavity - Forge Port (BoonelDanForever), and the "脆骨症黯光" modpack (Go-Camping).
+3. **Retain license notices** — include the original MIT License text and the Intellectual Property & Attribution section in your derivative work.
 
 ## Intellectual Property & Attribution
 
