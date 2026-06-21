@@ -1,5 +1,7 @@
 # ChestCavityTweak
 
+[中文](README.zh-CN.md)
+
 A Forge 1.19.2 add-on mod for [ChestCavity](https://github.com/Tigereye504/chestcavity) that allows configurable chest cavity inventory rows (3–6 rows, i.e. 27–54 slots).
 
 ## Important Notice
