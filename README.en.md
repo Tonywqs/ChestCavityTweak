@@ -8,6 +8,8 @@ A Forge 1.19.2 add-on mod for [ChestCavity](https://github.com/Tigereye504/chest
 
 **This mod is specifically designed for the "脆骨症" (No Flesh Within Chest) modpack v1.0.2-DIM.** It references GUI textures provided by that modpack at runtime (via KubeJS/Hotai) and **will not display correctly without the modpack installed**. This mod is not a standalone or general-purpose add-on.
 
+**This mod was generated with AI assistance.** The project code was generated using [QoderWork](https://qoder.com), an AI-powered programming assistant, including Mixin injections, configuration system, GUI rendering logic, and other core functionality.
+
 ## Features
 
 - Configurable chest cavity inventory size via server config (`cavityRows`: 3, 4, 5, or 6)
