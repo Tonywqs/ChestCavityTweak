@@ -1,74 +1,74 @@
 # ChestCavityTweak
 
-[中文](README.zh-CN.md)
+[English](README.en.md)
 
-A Forge 1.19.2 add-on mod for [ChestCavity](https://github.com/Tigereye504/chestcavity) that allows configurable chest cavity inventory rows (3–6 rows, i.e. 27–54 slots).
+一个基于 [ChestCavity](https://github.com/Tigereye504/chestcavity) 的 Forge 1.19.2 附属模组，可配置胸腔背包的行数（3–6 行，即 27–54 格）。
 
-## Important Notice
+## 重要声明
 
-**This mod is specifically designed for the "脆骨症" (No Flesh Within Chest) modpack v1.0.2-DIM.** It references GUI textures provided by that modpack at runtime (via KubeJS/Hotai) and **will not display correctly without the modpack installed**. This mod is not a standalone or general-purpose add-on.
+**本模组专为"脆骨症"(No Flesh Within Chest) 整合包 v1.0.2-DIM 设计。** 它在运行时通过 KubeJS/Hotai 引用该整合包提供的 GUI 纹理，**未安装该整合包时将无法正确显示**。本模组不是独立的或通用的附属模组。
 
-## Features
+## 功能特性
 
-- Configurable chest cavity inventory size via server config (`cavityRows`: 3, 4, 5, or 6)
-- Automatic GUI background extension for extra rows (pixel-perfect alignment)
-- Proper "物品栏" label repositioning in the gap between cavity rows and player inventory
-- Slot highlight and tooltip rendering unaffected
-- Default: 6 rows (54 slots)
+- 通过服务端配置调整胸腔背包大小（`cavityRows`：3、4、5 或 6 行）
+- 自动扩展 GUI 背景以适配额外行数（像素级精确对齐）
+- "物品栏"标签正确重定位到胸腔行与玩家背包之间的间隔区
+- 槽位选中高亮和物品提示渲染不受影响
+- 默认值：6 行（54 格）
 
-## Requirements
+## 运行环境要求
 
 - Minecraft 1.19.2
 - Forge 43.3.5
-- [ChestCavity](https://github.com/Tigereye504/chestcavity) (Forge port)
-- **"脆骨症" (No Flesh Within Chest) modpack v1.0.2-DIM** — required for GUI textures
+- [ChestCavity](https://github.com/Tigereye504/chestcavity)（Forge 移植版）
+- **"脆骨症"(No Flesh Within Chest) 整合包 v1.0.2-DIM** — 提供 GUI 纹理
 
-## Configuration
+## 配置
 
-After the first launch, a config file is generated at:
+首次启动后，配置文件生成于：
 ```
-<world>/serverconfig/chestcavitytweak-server.toml
+<世界>/serverconfig/chestcavitytweak-server.toml
 ```
 
 ```toml
 [chest_cavity_settings]
-    # Number of rows in the chest cavity inventory. Valid values: 3, 4, 5, 6.
-    # Takes effect after world/server restart.
-    # Reducing the size may cause items in excess slots to be lost.
-    # Range: 3 ~ 6
+    # 胸腔背包行数。有效值：3、4、5、6。
+    # 世界/服务器重启后生效。
+    # 减小大小可能导致多余槽位中的物品丢失。
+    # 范围：3 ~ 6
     cavityRows = 6
 ```
 
-## Building from Source
+## 从源码构建
 
-1. Place the ChestCavity Forge jar in the `libs/` directory (compile-only dependency)
-2. Run:
+1. 将 ChestCavity Forge jar 放入 `libs/` 目录（仅编译依赖）
+2. 运行：
    ```
    gradlew build
    ```
-3. Output jar: `build/libs/chestcavitytweak-1.19.2-1.0.0.jar`
+3. 输出 jar：`build/libs/chestcavitytweak-1.19.2-1.0.0.jar`
 
-## License
+## 许可证
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+本项目基于 **MIT 许可证** 开源 — 详见 [LICENSE](LICENSE) 文件。
 
-## Intellectual Property & Attribution
+## 知识产权与署名归属
 
 ### ChestCavity
 
-ChestCavity is a mod created and maintained by **Tigereye504**.
-- Source: [https://github.com/Tigereye504/chestcavity](https://github.com/Tigereye504/chestcavity)
+ChestCavity 是由 **Tigereye504** 创作并维护的模组。
+- 源码仓库：[https://github.com/Tigereye504/chestcavity](https://github.com/Tigereye504/chestcavity)
 
-This add-on mod does **not** include, redistribute, or modify any ChestCavity source code, assets, or resources. It uses [SpongePowered Mixin](https://github.com/SpongePowered/Mixin) to inject bytecode at runtime, and depends on ChestCavity as a `compileOnly` dependency (not packaged into the output jar).
+本附属模组**不**包含、再分发或修改任何 ChestCavity 的源代码、素材或资源。它使用 [SpongePowered Mixin](https://github.com/SpongePowered/Mixin) 在运行时注入字节码，并以 `compileOnly` 方式依赖 ChestCavity（不打包进输出 jar）。
 
-### "脆骨症" (No Flesh Within Chest) Modpack
+### "脆骨症"(No Flesh Within Chest) 整合包
 
-The GUI textures referenced by this mod at runtime belong to the **"脆骨症" (No Flesh Within Chest) modpack**. This mod does **not** include or redistribute any textures or assets from the modpack. The texture `chestcavity:chest_cavity.png` is provided at runtime by the modpack's KubeJS/Hotai resource overrides.
+本模组在运行时引用的 GUI 纹理归属于 **"脆骨症"(No Flesh Within Chest) 整合包**。本模组**不**包含或再分发该整合包的任何纹理或素材。纹理 `chestcavity:chest_cavity.png` 由整合包的 KubeJS/Hotai 资源覆盖在运行时提供。
 
 ### Minecraft / Forge
 
-Minecraft is a trademark of Mojang Studios / Microsoft Corporation. Forge is a free, open-source modding API. This project is not affiliated with, endorsed by, or sponsored by Mojang Studios, Microsoft Corporation, or the Forge team.
+Minecraft 是 Mojang Studios / Microsoft Corporation 的商标。Forge 是免费开源的模组开发 API。本项目与 Mojang Studios、Microsoft Corporation 或 Forge 团队无关，未获其认可或赞助。
 
-### Disclaimer
+### 免责声明
 
-This mod is an independent, fan-made add-on. All rights to the original ChestCavity mod and the "脆骨症" modpack belong to their respective authors. This project makes no claim of ownership over any referenced assets, names, or trademarks.
+本模组是一个独立的、由爱好者制作的附属模组。ChestCavity 原版模组和"脆骨症"整合包的所有权利归其各自作者所有。本项目不对任何引用的素材、名称或商标主张所有权。
