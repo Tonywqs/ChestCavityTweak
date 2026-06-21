@@ -8,6 +8,8 @@ A Forge 1.19.2 add-on mod for [Chest Cavity - Forge Port](https://github.com/Boo
 
 **This mod is specifically designed for the "脆骨症黯光" modpack v1.0.2-DIM.** This modpack is a [fork](https://github.com/Go-Camping/No-Flesh-Within-Chest/tree/version_all_dim) of [No Flesh Within Chest (脆骨症)](https://github.com/Go-Camping/No-Flesh-Within-Chest). It references GUI textures provided by that modpack at runtime (via KubeJS/Hotai) and **will not display correctly without the modpack installed**. This mod is not a standalone or general-purpose add-on.
 
+**Version-specific disclaimer:** This mod is only compatible with 脆骨症黯光-1.0.2-DIM (No Flesh Within Chest-1.0.2-DIM). All other versions — including the original 脆骨症 releases and other branches/forks — have not been tested. Compatibility and stability on non-target versions are unknown. Any consequences resulting from use outside the target version are the sole responsibility of the user.
+
 **This mod was generated with AI assistance.** The project code was generated using [QoderWork](https://qoder.com), an AI-powered programming assistant, including Mixin injections, configuration system, GUI rendering logic, and other core functionality.
 
 ## Features
