@@ -2,11 +2,11 @@
 
 [中文](README.md)
 
-A Forge 1.19.2 add-on mod for [ChestCavity](https://github.com/Tigereye504/chestcavity) that allows configurable chest cavity inventory rows (3–6 rows, i.e. 27–54 slots).
+A Forge 1.19.2 add-on mod for [Chest Cavity - Forge Port](https://github.com/BoonelDanForever/ChestCavityForge) that allows configurable chest cavity inventory rows (3–6 rows, i.e. 27–54 slots).
 
 ## Important Notice
 
-**This mod is specifically designed for the "脆骨症" (No Flesh Within Chest) modpack v1.0.2-DIM.** It references GUI textures provided by that modpack at runtime (via KubeJS/Hotai) and **will not display correctly without the modpack installed**. This mod is not a standalone or general-purpose add-on.
+**This mod is specifically designed for the "脆骨症黯光" modpack v1.0.2-DIM.** This modpack is a [fork](https://github.com/Go-Camping/No-Flesh-Within-Chest/tree/version_all_dim) of [No Flesh Within Chest (脆骨症)](https://github.com/Go-Camping/No-Flesh-Within-Chest). It references GUI textures provided by that modpack at runtime (via KubeJS/Hotai) and **will not display correctly without the modpack installed**. This mod is not a standalone or general-purpose add-on.
 
 **This mod was generated with AI assistance.** The project code was generated using [QoderWork](https://qoder.com), an AI-powered programming assistant, including Mixin injections, configuration system, GUI rendering logic, and other core functionality.
 
@@ -22,8 +22,8 @@ A Forge 1.19.2 add-on mod for [ChestCavity](https://github.com/Tigereye504/chest
 
 - Minecraft 1.19.2
 - Forge 43.3.5
-- [ChestCavity](https://github.com/Tigereye504/chestcavity) (Forge port)
-- **"脆骨症" (No Flesh Within Chest) modpack v1.0.2-DIM** — required for GUI textures
+- [Chest Cavity - Forge Port](https://github.com/BoonelDanForever/ChestCavityForge) (Forge port of ChestCavity)
+- **"脆骨症黯光" modpack v1.0.2-DIM** — required for GUI textures
 
 ## Configuration
 
@@ -56,16 +56,21 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 
 ## Intellectual Property & Attribution
 
-### ChestCavity
+### ChestCavity / Chest Cavity - Forge Port
 
-ChestCavity is a mod created and maintained by **Tigereye504**.
-- Source: [https://github.com/Tigereye504/chestcavity](https://github.com/Tigereye504/chestcavity)
+ChestCavity is a Fabric mod created and maintained by **Tigereye504**.
+- Original source: [https://github.com/Tigereye504/chestcavity](https://github.com/Tigereye504/chestcavity)
 
-This add-on mod does **not** include, redistribute, or modify any ChestCavity source code, assets, or resources. It uses [SpongePowered Mixin](https://github.com/SpongePowered/Mixin) to inject bytecode at runtime, and depends on ChestCavity as a `compileOnly` dependency (not packaged into the output jar).
+Chest Cavity - Forge Port is a Forge port maintained by **BoonelDanForever**.
+- Forge Port source: [https://github.com/BoonelDanForever/ChestCavityForge](https://github.com/BoonelDanForever/ChestCavityForge)
 
-### "脆骨症" (No Flesh Within Chest) Modpack
+This add-on mod does **not** include, redistribute, or modify any ChestCavity or Chest Cavity - Forge Port source code, assets, or resources. It uses [SpongePowered Mixin](https://github.com/SpongePowered/Mixin) to inject bytecode at runtime, and depends on Chest Cavity - Forge Port as a `compileOnly` dependency (not packaged into the output jar).
 
-The GUI textures referenced by this mod at runtime belong to the **"脆骨症" (No Flesh Within Chest) modpack**. This mod does **not** include or redistribute any textures or assets from the modpack. The texture `chestcavity:chest_cavity.png` is provided at runtime by the modpack's KubeJS/Hotai resource overrides.
+### "脆骨症黯光" Modpack
+
+"脆骨症黯光" is a [fork](https://github.com/Go-Camping/No-Flesh-Within-Chest/tree/version_all_dim) of [No Flesh Within Chest (脆骨症)](https://github.com/Go-Camping/No-Flesh-Within-Chest), maintained by **Go-Camping**.
+
+The GUI textures referenced by this mod at runtime belong to the **"脆骨症黯光" modpack**. This mod does **not** include or redistribute any textures or assets from the modpack. The texture `chestcavity:chest_cavity.png` is provided at runtime by the modpack's KubeJS/Hotai resource overrides.
 
 ### Minecraft / Forge
 
@@ -73,4 +78,4 @@ Minecraft is a trademark of Mojang Studios / Microsoft Corporation. Forge is a f
 
 ### Disclaimer
 
-This mod is an independent, fan-made add-on. All rights to the original ChestCavity mod and the "脆骨症" modpack belong to their respective authors. This project makes no claim of ownership over any referenced assets, names, or trademarks.
+This mod is an independent, fan-made add-on. All rights to the original ChestCavity mod, Chest Cavity - Forge Port, and the "脆骨症黯光" modpack belong to their respective authors. This project makes no claim of ownership over any referenced assets, names, or trademarks.
